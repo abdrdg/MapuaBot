@@ -27,9 +27,9 @@ namespace AutoSurveyV2
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
-            buttonStart.Enabled = false;
             buttonStart.Text = "Logging in... Please wait!";
-            MapuaSurveyBot.bot bot = new MapuaSurveyBot.bot(textBoxMyMail.Text, textBoxPassword.Text, true);
+            buttonStart.Enabled = false;
+            MapuaSurveyBot.bot bot = new MapuaSurveyBot.bot(textBoxMyMail.Text, textBoxPassword.Text);
             bot.Login();
             buttonStart.Text = "Logged in!";
             this.Hide();

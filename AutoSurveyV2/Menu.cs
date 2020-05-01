@@ -41,8 +41,18 @@ namespace AutoSurveyV2
 
         private void buttonLab_Click(object sender, EventArgs e)
         {
-            buttonLab.Enabled = false;
             buttonLab.Text = "Please wait...";
+            buttonLab.Enabled = false;
+
+            if (user_bot.AnswerLabAssessment())
+            {
+                buttonLab.Text = "Laboratory Assessment Survey Done!";
+            }
+            else
+            {
+                buttonLab.Text = "No pending Laboratory Assessment Survey";
+            }
+
         }
 
         private void buttonStud_Click(object sender, EventArgs e)
