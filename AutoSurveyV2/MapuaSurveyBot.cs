@@ -32,7 +32,7 @@ namespace MapuaSurveyBot
             }
 
             chrome = new ChromeDriver(chromeDriverService, option);
-            explicitWait = new WebDriverWait(chrome, TimeSpan.FromSeconds(10));
+            explicitWait = new WebDriverWait(chrome, TimeSpan.FromSeconds(15));
         }
 
 
@@ -195,8 +195,12 @@ namespace MapuaSurveyBot
                     explicitWait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath("/html/body/form/div[3]/div[2]/ul/li[5]/ul/li[" + x + "]/select"))).SendKeys("10");
                 }
 
-                //clickable = explicitWait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.XPath("/html/body/form/div[3]/div[2]/div[1]/input[1]")));
-                //clickable.Click();
+                IWebElement clickable = explicitWait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.XPath("/html/body/form/div[3]/div[2]/div[1]/input[1]")));
+                clickable.Click();
+
+                //Alert handling
+                chrome.SwitchTo().Alert().Accept();
+                chrome.SwitchTo().Alert().Accept();
             }
             goHome();
             return true;
@@ -241,9 +245,12 @@ namespace MapuaSurveyBot
                 {
                     explicitWait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath("/html/body/form/div[3]/div[2]/ul[2]/li[4]/ul/li[" + x + "]/select"))).SendKeys("5");
                 }
-                //clickable = explicitWait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.XPath("/html/body/form/div[3]/div[2]/div[4]/input[1]")));
-                //clickable.Click();
+                IWebElement clickable = explicitWait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.XPath("/html/body/form/div[3]/div[2]/div[4]/input[1]")));
+                clickable.Click();
+
+                chrome.SwitchTo().Alert().Accept();
             }
+            chrome.SwitchTo().Alert().Accept();
             goHome();
             return true;
         }

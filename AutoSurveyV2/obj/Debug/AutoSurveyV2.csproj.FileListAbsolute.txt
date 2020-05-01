@@ -1,4 +1,3 @@
-C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\AutoSurveyV2\obj\Debug\AutoSurveyV2.csprojAssemblyReference.cache
 C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\AutoSurveyV2\obj\Debug\AutoSurveyV2.Properties.Resources.resources
 C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\AutoSurveyV2\obj\Debug\AutoSurveyV2.csproj.GenerateResource.cache
 C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\AutoSurveyV2\obj\Debug\AutoSurveyV2.csproj.CoreCompileInputs.cache
@@ -15,3 +14,4 @@ C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\Au
 C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\AutoSurveyV2\obj\Debug\AutoSurveyV2.pdb
 C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\AutoSurveyV2\obj\Debug\AutoSurveyV2.LoginForm.resources
 C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\AutoSurveyV2\obj\Debug\AutoSurveyV2.Menu.resources
+C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\AutoSurveyV2\obj\Debug\AutoSurveyV2.csprojAssemblyReference.cache

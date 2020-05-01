@@ -15,44 +15,60 @@ namespace AutoSurveyV2
     {
         MapuaSurveyBot.bot user_bot;
         LoginForm login_form;
+        bool isRead;
         public Menu(LoginForm login_form, MapuaSurveyBot.bot user_bot)
         {
             this.login_form = login_form;
             this.user_bot = user_bot;
             InitializeComponent();
             labelName.Text = "Welcome, " + user_bot.Get_Username();
+            isRead = false;
         }
 
         private void buttonFaculty_Click(object sender, EventArgs e)
         {
-            buttonFaculty.Text = "Please wait...";
-            buttonFaculty.Enabled = false;
-
-            if (user_bot.AnswerFacultyAssessment())
+            if (isRead)
             {
-                buttonFaculty.Text = "Faculty Assessment Survey Done!";
+
+                buttonFaculty.Text = "Please wait...";
+                buttonFaculty.Enabled = false;
+
+                if (user_bot.AnswerFacultyAssessment())
+                {
+                    buttonFaculty.Text = "Faculty Assessment Survey Done!";
+                }
+                else
+                {
+                    buttonFaculty.Text = "No pending Faculty Assessment Survey";
+                }
             }
             else
             {
-                buttonFaculty.Text = "No pending Faculty Assessment Survey";
+                MessageBox.Show("Please read the 'README' first at the upper right.");
             }
 
         }
 
         private void buttonLab_Click(object sender, EventArgs e)
         {
-            buttonLab.Text = "Please wait...";
-            buttonLab.Enabled = false;
-
-            if (user_bot.AnswerLabAssessment())
+            if (isRead)
             {
-                buttonLab.Text = "Laboratory Assessment Survey Done!";
+                buttonLab.Text = "Please wait...";
+                buttonLab.Enabled = false;
+
+                if (user_bot.AnswerLabAssessment())
+                {
+                    buttonLab.Text = "Laboratory Assessment Survey Done!";
+                }
+                else
+                {
+                    buttonLab.Text = "No pending Laboratory Assessment Survey";
+                }
             }
             else
             {
-                buttonLab.Text = "No pending Laboratory Assessment Survey";
+                MessageBox.Show("Please read the 'README' first at the upper right.");
             }
-
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
@@ -60,6 +76,12 @@ namespace AutoSurveyV2
             this.Close();
             login_form.Close();
             user_bot.Close();
+        }
+
+        private void buttonInfo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Automatic perfect score ang ilalagay neto sa mga survey. \nSo sagutan niyo muna manually yung gusto niyong bigyan ng hindi perfect score tas balik nalang kayo dito. \nUse this responsibly, wag tamad.");
+            isRead = true;
         }
     }
 }

@@ -13,6 +13,7 @@ namespace AutoSurveyV2
 {
     public partial class LoginForm : Form
     {
+        MapuaSurveyBot.bot bot;
         public LoginForm()
         {
             InitializeComponent();
@@ -29,24 +30,28 @@ namespace AutoSurveyV2
         {
             buttonStart.Text = "Logging in... Please wait!";
             buttonStart.Enabled = false;
-            MapuaSurveyBot.bot bot = new MapuaSurveyBot.bot(textBoxMyMail.Text, textBoxPassword.Text, !checkBoxHeadless.Checked);
+            bot = new MapuaSurveyBot.bot(textBoxMyMail.Text, textBoxPassword.Text, !checkBoxHeadless.Checked);
             if (bot.Login())
             {
                 buttonStart.Text = "Logged in!";
-                this.Hide();
-
                 Menu menu = new Menu(this, bot);
                 menu.Show();
+                this.Hide();
             }
             else
             {
                 MessageBox.Show("Incorrect login. Please try again.");
                 bot.Close();
-                buttonStart.Text = "Log in";
+                buttonStart.Text = "LOG IN";
                 buttonStart.Enabled = true;
             }
             textBoxMyMail.Clear();
             textBoxPassword.Clear();
+        }
+
+        private void buttonInfo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Libre niyo ko milktea. >:(");
         }
     }
 }

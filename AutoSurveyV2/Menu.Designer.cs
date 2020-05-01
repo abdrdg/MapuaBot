@@ -33,6 +33,10 @@
             this.buttonFaculty = new System.Windows.Forms.Button();
             this.buttonLab = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.buttonInfo = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -64,31 +68,32 @@
             this.buttonFaculty.BackColor = System.Drawing.Color.Yellow;
             this.buttonFaculty.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonFaculty.FlatAppearance.BorderColor = System.Drawing.Color.DarkRed;
+            this.buttonFaculty.FlatAppearance.BorderSize = 0;
             this.buttonFaculty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonFaculty.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonFaculty.ForeColor = System.Drawing.Color.DarkRed;
-            this.buttonFaculty.Location = new System.Drawing.Point(0, 79);
+            this.buttonFaculty.Location = new System.Drawing.Point(0, 78);
             this.buttonFaculty.Name = "buttonFaculty";
-            this.buttonFaculty.Size = new System.Drawing.Size(453, 55);
+            this.buttonFaculty.Size = new System.Drawing.Size(453, 70);
             this.buttonFaculty.TabIndex = 1;
-            this.buttonFaculty.Text = "Answer Faculty Evaluation";
+            this.buttonFaculty.Text = "AUTO Answer Faculty Evaluation";
             this.buttonFaculty.UseVisualStyleBackColor = false;
             this.buttonFaculty.Click += new System.EventHandler(this.buttonFaculty_Click);
             // 
             // buttonLab
             // 
-            this.buttonLab.BackColor = System.Drawing.Color.Yellow;
+            this.buttonLab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonLab.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonLab.FlatAppearance.BorderColor = System.Drawing.Color.DarkRed;
             this.buttonLab.FlatAppearance.BorderSize = 0;
             this.buttonLab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLab.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLab.ForeColor = System.Drawing.Color.DarkRed;
-            this.buttonLab.Location = new System.Drawing.Point(0, 134);
+            this.buttonLab.Location = new System.Drawing.Point(0, 148);
             this.buttonLab.Name = "buttonLab";
-            this.buttonLab.Size = new System.Drawing.Size(453, 50);
+            this.buttonLab.Size = new System.Drawing.Size(453, 65);
             this.buttonLab.TabIndex = 2;
-            this.buttonLab.Text = "Answer Laboratory Assesment";
+            this.buttonLab.Text = "AUTO Answer Laboratory Assesment";
             this.buttonLab.UseVisualStyleBackColor = false;
             this.buttonLab.Click += new System.EventHandler(this.buttonLab_Click);
             // 
@@ -100,7 +105,7 @@
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExit.ForeColor = System.Drawing.Color.Yellow;
-            this.buttonExit.Location = new System.Drawing.Point(0, 184);
+            this.buttonExit.Location = new System.Drawing.Point(0, 213);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(453, 26);
             this.buttonExit.TabIndex = 3;
@@ -108,13 +113,63 @@
             this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Yellow;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(-2, 78);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(289, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "*CAUTION! THIS WILL AUTOMATICALLY RATE ALL PROFESSORS 10";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(-2, 151);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(287, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "*CAUTION! THIS WILL AUTOMATICALLY RATE ALL LABORATORY 5";
+            // 
+            // buttonInfo
+            // 
+            this.buttonInfo.Font = new System.Drawing.Font("Century Gothic", 5.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonInfo.Location = new System.Drawing.Point(433, 3);
+            this.buttonInfo.Name = "buttonInfo";
+            this.buttonInfo.Size = new System.Drawing.Size(18, 17);
+            this.buttonInfo.TabIndex = 8;
+            this.buttonInfo.Text = "?";
+            this.buttonInfo.UseVisualStyleBackColor = true;
+            this.buttonInfo.Click += new System.EventHandler(this.buttonInfo_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(374, 3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 16);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "README: ";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(453, 210);
+            this.ClientSize = new System.Drawing.Size(453, 239);
             this.ControlBox = false;
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.buttonInfo);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.buttonFaculty);
@@ -126,6 +181,7 @@
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,5 +194,9 @@
         private System.Windows.Forms.Button buttonFaculty;
         private System.Windows.Forms.Button buttonLab;
         private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button buttonInfo;
+        private System.Windows.Forms.Label label4;
     }
 }

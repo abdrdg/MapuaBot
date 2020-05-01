@@ -37,6 +37,7 @@
             this.labelTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.checkBoxHeadless = new System.Windows.Forms.CheckBox();
+            this.buttonInfo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonExit
@@ -67,7 +68,7 @@
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(411, 69);
             this.buttonStart.TabIndex = 2;
-            this.buttonStart.Text = "START";
+            this.buttonStart.Text = "LOG IN";
             this.buttonStart.UseVisualStyleBackColor = false;
             this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
@@ -149,12 +150,25 @@
             this.checkBoxHeadless.Text = "Show Browser";
             this.checkBoxHeadless.UseVisualStyleBackColor = true;
             // 
+            // buttonInfo
+            // 
+            this.buttonInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonInfo.Location = new System.Drawing.Point(392, 2);
+            this.buttonInfo.Name = "buttonInfo";
+            this.buttonInfo.Size = new System.Drawing.Size(18, 17);
+            this.buttonInfo.TabIndex = 7;
+            this.buttonInfo.Text = "?";
+            this.buttonInfo.UseVisualStyleBackColor = true;
+            this.buttonInfo.Click += new System.EventHandler(this.buttonInfo_Click);
+            // 
             // LoginForm
             // 
+            this.AcceptButton = this.buttonStart;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(411, 230);
             this.ControlBox = false;
+            this.Controls.Add(this.buttonInfo);
             this.Controls.Add(this.checkBoxHeadless);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelTitle);
@@ -187,6 +201,7 @@
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBoxHeadless;
+        private System.Windows.Forms.Button buttonInfo;
     }
 }
 
