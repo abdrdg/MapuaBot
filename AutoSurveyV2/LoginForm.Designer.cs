@@ -35,6 +35,8 @@
             this.labelPassword = new System.Windows.Forms.Label();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.labelTitle = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.checkBoxHeadless = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // buttonExit
@@ -43,7 +45,7 @@
             this.buttonExit.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonExit.FlatAppearance.BorderSize = 0;
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExit.ForeColor = System.Drawing.Color.Yellow;
             this.buttonExit.Location = new System.Drawing.Point(0, 206);
             this.buttonExit.Name = "buttonExit";
@@ -59,7 +61,7 @@
             this.buttonStart.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonStart.FlatAppearance.BorderSize = 0;
             this.buttonStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonStart.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonStart.ForeColor = System.Drawing.Color.Maroon;
             this.buttonStart.Location = new System.Drawing.Point(0, 137);
             this.buttonStart.Name = "buttonStart";
@@ -119,12 +121,33 @@
             this.labelTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTitle.AutoSize = true;
-            this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.Location = new System.Drawing.Point(86, 11);
+            this.labelTitle.Font = new System.Drawing.Font("Century Gothic", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.Location = new System.Drawing.Point(89, 11);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(235, 39);
+            this.labelTitle.Size = new System.Drawing.Size(236, 40);
             this.labelTitle.TabIndex = 4;
             this.labelTitle.Text = "AutoSurveyV2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(291, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "By ABDRDG";
+            // 
+            // checkBoxHeadless
+            // 
+            this.checkBoxHeadless.AutoSize = true;
+            this.checkBoxHeadless.Location = new System.Drawing.Point(3, 2);
+            this.checkBoxHeadless.Name = "checkBoxHeadless";
+            this.checkBoxHeadless.Size = new System.Drawing.Size(94, 17);
+            this.checkBoxHeadless.TabIndex = 6;
+            this.checkBoxHeadless.Text = "Show Browser";
+            this.checkBoxHeadless.UseVisualStyleBackColor = true;
             // 
             // LoginForm
             // 
@@ -132,6 +155,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(411, 230);
             this.ControlBox = false;
+            this.Controls.Add(this.checkBoxHeadless);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.labelPassword);
@@ -143,6 +168,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AutoSurveyV2";
             this.TopMost = true;
             this.ResumeLayout(false);
@@ -159,6 +185,8 @@
         private System.Windows.Forms.Label labelPassword;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox checkBoxHeadless;
     }
 }
 

@@ -55,14 +55,9 @@ namespace AutoSurveyV2
 
         }
 
-        private void buttonStud_Click(object sender, EventArgs e)
+        private void buttonExit_Click(object sender, EventArgs e)
         {
-            buttonStud.Enabled = false;
-            buttonStud.Text = "Please wait...";
-        }
-
-        private void Menu_FormClosed(object sender, FormClosedEventArgs e)
-        {
+            this.Close();
             login_form.Close();
             user_bot.Close();
         }

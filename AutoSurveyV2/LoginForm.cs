@@ -29,13 +29,22 @@ namespace AutoSurveyV2
         {
             buttonStart.Text = "Logging in... Please wait!";
             buttonStart.Enabled = false;
-            MapuaSurveyBot.bot bot = new MapuaSurveyBot.bot(textBoxMyMail.Text, textBoxPassword.Text);
-            bot.Login();
-            buttonStart.Text = "Logged in!";
-            this.Hide();
+            MapuaSurveyBot.bot bot = new MapuaSurveyBot.bot(textBoxMyMail.Text, textBoxPassword.Text, !checkBoxHeadless.Checked);
+            if (bot.Login())
+            {
+                buttonStart.Text = "Logged in!";
+                this.Hide();
 
-            Menu menu = new Menu(this, bot);
-            menu.Show();
+                Menu menu = new Menu(this, bot);
+                menu.Show();
+            }
+            else
+            {
+                MessageBox.Show("Incorrect login. Please try again.");
+                bot.Close();
+                buttonStart.Text = "Log in";
+                buttonStart.Enabled = true;
+            }
             textBoxMyMail.Clear();
             textBoxPassword.Clear();
         }
