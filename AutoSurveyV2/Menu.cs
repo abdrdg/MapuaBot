@@ -80,7 +80,7 @@ namespace AutoSurveyV2
 
         private void buttonInfo_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Automatic perfect score ang ilalagay neto sa mga survey. \nSo sagutan niyo muna manually yung gusto niyong bigyan ng hindi perfect score tas balik nalang kayo dito. \nUse this responsibly, wag tamad.");
+            MessageBox.Show("Automatic perfect score ang ilalagay neto sa mga survey. \nSo sagutan niyo muna manually yung gusto niyong bigyan ng hindi perfect score tas balik nalang kayo dito. \nUse this responsibly, wag tamad hehe.");
             isRead = true;
         }
     }
