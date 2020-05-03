@@ -41,3 +41,7 @@
 [0501/040036.132:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
 [0501/040036.132:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
 [0501/040036.151:ERROR:exception_snapshot_win.cc(98)] thread ID 10868 not found in process
+[0502/164731.111:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0502/164933.240:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0502/165133.738:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0502/200937.961:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
