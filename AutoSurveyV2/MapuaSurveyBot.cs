@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -12,6 +13,9 @@ namespace MapuaSurveyBot
 {
     public class bot
     {
+        static public double tasks = ;
+        public double progress = 0 / tasks;
+
         private string email;
         private string password;
 
@@ -101,16 +105,20 @@ namespace MapuaSurveyBot
         }
 
 
-        void timeoutCheck()
+        bool timeoutCheck()
         {
-            // !TODO: Implement Timeout check
+            if(chrome.Url == "https://my.mapua.edu.ph/Error/SessionLost.aspx")
+            {
+                goHome();
+                return true;
+            }
+            return false;
         }
 
 
         void goHome()
         {
             chrome.Url = "https://my.mapua.edu.ph/Student/Default.aspx";
-            timeoutCheck();
             multipleDevicesCheck();
             closePopup();
         }
@@ -118,6 +126,8 @@ namespace MapuaSurveyBot
 
         public string GetSurveyLink(string surveyName)
         {
+
+
             IWebElement surveyContent = explicitWait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath("/html/body/form/div[3]/div[2]/ul")));
             IReadOnlyCollection<IWebElement> surveys = surveyContent.FindElements(By.CssSelector("a"));
             List<string> surveyLinks = new List<string>();
@@ -153,10 +163,17 @@ namespace MapuaSurveyBot
 
         public bool AnswerFacultyAssessment()
         {
+            
+
             //Open faculty survey
             if (GetSurveyLink("Faculty") != null)
             {
-                chrome.Url = GetSurveyLink("Faculty");
+                do
+                {
+                    chrome.Url = GetSurveyLink("Faculty");
+                }
+                while (timeoutCheck());
+
             }
             else
             {
@@ -212,7 +229,11 @@ namespace MapuaSurveyBot
             //Open Laboratory survey
             if (GetSurveyLink("Laboratory") != null)
             {
-                chrome.Url = GetSurveyLink("Laboratory");
+                do
+                {
+                    chrome.Url = GetSurveyLink("Laboratory");
+                }
+                while (timeoutCheck());
             }
             else
             {
