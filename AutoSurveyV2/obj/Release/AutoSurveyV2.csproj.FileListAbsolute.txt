@@ -14,4 +14,3 @@ C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\Au
 C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\AutoSurveyV2\obj\Release\AutoSurveyV2.csproj.CopyComplete
 C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\AutoSurveyV2\obj\Release\AutoSurveyV2.exe
 C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\AutoSurveyV2\obj\Release\AutoSurveyV2.pdb
-C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\AutoSurveyV2\obj\Release\AutoSurveyV2.csprojAssemblyReference.cache
