@@ -53,5 +53,10 @@ namespace AutoSurveyV2
         {
             MessageBox.Show("Libre niyo ko milktea. >:(");
         }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
