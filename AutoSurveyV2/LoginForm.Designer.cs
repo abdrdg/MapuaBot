@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.checkBoxHeadless = new System.Windows.Forms.CheckBox();
             this.buttonInfo = new System.Windows.Forms.Button();
+            this.label_progress = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonExit
@@ -173,6 +174,16 @@
             this.buttonInfo.UseVisualStyleBackColor = false;
             this.buttonInfo.Click += new System.EventHandler(this.buttonInfo_Click);
             // 
+            // label_progress
+            // 
+            this.label_progress.AutoSize = true;
+            this.label_progress.ForeColor = System.Drawing.Color.White;
+            this.label_progress.Location = new System.Drawing.Point(12, 204);
+            this.label_progress.Name = "label_progress";
+            this.label_progress.Size = new System.Drawing.Size(13, 13);
+            this.label_progress.TabIndex = 8;
+            this.label_progress.Text = "0";
+            // 
             // LoginForm
             // 
             this.AcceptButton = this.buttonStart;
@@ -181,6 +192,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(3)))), ((int)(((byte)(38)))));
             this.ClientSize = new System.Drawing.Size(411, 313);
             this.ControlBox = false;
+            this.Controls.Add(this.label_progress);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonInfo);
             this.Controls.Add(this.checkBoxHeadless);
@@ -216,6 +228,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBoxHeadless;
         private System.Windows.Forms.Button buttonInfo;
+        private System.Windows.Forms.Label label_progress;
     }
 }
 

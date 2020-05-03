@@ -13,8 +13,9 @@ namespace MapuaSurveyBot
 {
     public class bot
     {
-        static public double tasks = ;
-        public double progress = 0 / tasks;
+        static private double login_tasks = 3;
+        private double finished = 0;
+        public double progress = 0;
 
         private string email;
         private string password;
@@ -23,7 +24,7 @@ namespace MapuaSurveyBot
         ChromeOptions option = new ChromeOptions();
         IWebDriver chrome;
         WebDriverWait explicitWait;
-        
+
         public bot(string email, string password, bool isHeadless=false)
         {
             this.email = email;
@@ -66,6 +67,7 @@ namespace MapuaSurveyBot
                 //Asks password save
                 IWebElement clickable = explicitWait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.XPath("/html/body/div/form/div[1]/div/div[1]/div[2]/div/div[2]/div/div[3]/div[2]/div/div/div[1]/input")));
                 clickable.Click();
+                TaskFinished();
             }
             catch(Exception e)
             {
@@ -92,6 +94,7 @@ namespace MapuaSurveyBot
             {
                 Console.WriteLine("No pop-ups");
             }
+            TaskFinished();
         }
 
 
@@ -102,6 +105,7 @@ namespace MapuaSurveyBot
                 IWebElement clickable = explicitWait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.XPath("/html/body/form/div[3]/div/p/a")));
                 clickable.Click();
             }
+            TaskFinished();
         }
 
 
@@ -281,7 +285,13 @@ namespace MapuaSurveyBot
         {
             chrome.Close();
         }
-        
+
+
+        private void TaskFinished()
+        {
+            finished += 1;
+            progress = finished / login_tasks;
+        }
 
     }
 }
