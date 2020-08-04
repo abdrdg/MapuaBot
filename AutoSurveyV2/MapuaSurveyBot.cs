@@ -251,6 +251,7 @@ namespace MapuaSurveyBot
                 chrome.SwitchTo().Alert().Accept();
             }
             chrome.SwitchTo().Alert().Accept();
+            chrome.SwitchTo().Alert().Accept();
             goHome();
             return true;
         }
