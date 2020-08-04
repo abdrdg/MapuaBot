@@ -13,3 +13,11 @@ C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\wp
 C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\wpf\AutoSurvey_WPF\AutoSurvey_WPF\obj\Debug\AutoSurvey_WPF.csproj.CoreCompileInputs.cache
 C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\wpf\AutoSurvey_WPF\AutoSurvey_WPF\obj\Debug\AutoSurvey_WPF.exe
 C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\wpf\AutoSurvey_WPF\AutoSurvey_WPF\obj\Debug\AutoSurvey_WPF.pdb
+C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\wpf\AutoSurvey_WPF\AutoSurvey_WPF\obj\Debug\Menu.g.cs
+C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\wpf\AutoSurvey_WPF\AutoSurvey_WPF\bin\Debug\SeleniumExtras.WaitHelpers.dll
+C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\wpf\AutoSurvey_WPF\AutoSurvey_WPF\bin\Debug\WebDriver.dll
+C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\wpf\AutoSurvey_WPF\AutoSurvey_WPF\bin\Debug\WebDriver.Support.dll
+C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\wpf\AutoSurvey_WPF\AutoSurvey_WPF\bin\Debug\WebDriver.xml
+C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\wpf\AutoSurvey_WPF\AutoSurvey_WPF\bin\Debug\WebDriver.Support.xml
+C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\wpf\AutoSurvey_WPF\AutoSurvey_WPF\obj\Debug\Menu.baml
+C:\Users\AllanBernard\Desktop\IT Stuff\Projects\Work in Progress\AutoSurveyV2\wpf\AutoSurvey_WPF\AutoSurvey_WPF\obj\Debug\AutoSurvey_WPF.csproj.CopyComplete

@@ -26,7 +26,7 @@
                             </Style>
                         </CheckBox.Resources>
                     </CheckBox>
-                    <Button BorderThickness="0" Content="?" Grid.Column="2" Height="20" Width="20" HorizontalAlignment="Right" Background="#3C038C" Foreground="White" Name="button_Hint" Click="button_Hint_Click">
+                    <Button BorderThickness="0" Content="?" Grid.Column="2" Height="20" Width="20" HorizontalAlignment="Right" Background="#3C038C" Foreground="White" Name="button_Hint" Click="buttonInfo_Click">
                         <Button.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="10"/>
@@ -67,15 +67,16 @@
                     </Grid>
                 </StackPanel>
                 
-                <Button Content="LOG IN" FontSize="20" BorderThickness="0" Margin="40 0 40 10" Padding="10" Background="#F28705" Foreground="White" FontFamily="Century Gothic" Name="button_Login">
+                <Button Content="LOG IN" FontSize="20" BorderThickness="0" Margin="40 0 40 10" Padding="10" Background="#F28705" Foreground="White" FontFamily="Century Gothic" Name="button_Login" Click="button_Login_Click" >
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="20"/>
+                            
                         </Style>
                     </Button.Resources>
                 </Button>
 
-                <Button Content="EXIT" BorderThickness="0" Margin="90 0 90 0" Padding="10" Background="#F2B705" Foreground="White" FontFamily="Century Gothic" Name="button_Exit" Click="button_Exit_Click">
+                <Button Content="EXIT" BorderThickness="0" Margin="90 0 90 0" Padding="10" Background="#F2B705" Foreground="White" FontFamily="Century Gothic" Name="button_Exit" Click="buttonExit_Click">
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="20"/>

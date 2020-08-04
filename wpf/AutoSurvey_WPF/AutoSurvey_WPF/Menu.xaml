@@ -24,7 +24,7 @@
                     <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
                         <TextBlock Text="Readme: " Foreground="White" FontFamily="Century Gothic" VerticalAlignment="Center"/>
 
-                        <Button BorderThickness="0" Content="?"  Height="20" Width="20" HorizontalAlignment="Right" Background="#3C038C" Foreground="White" Name="button_ReadMe">
+                        <Button BorderThickness="0" Content="?"  Height="20" Width="20" HorizontalAlignment="Right" Background="#3C038C" Foreground="White" Name="button_ReadMe" Click="buttonInfo_Click">
                             <Button.Resources>
                                 <Style TargetType="Border">
                                     <Setter Property="CornerRadius" Value="10"/>
@@ -40,15 +40,7 @@
                     <TextBlock Text="By ABDRDG" FontSize="10" Foreground="#3C038C" FontFamily="Century Gothic" HorizontalAlignment="Right" Margin="0 0 100 0"/>
                 </StackPanel>
 
-                <Button Content="Answer Faculty Evaluation" FontSize="17" BorderThickness="0" Margin="40 0 40 10" Padding="10" Background="#F28705" Foreground="White" FontFamily="Century Gothic" Name="button_FacEvaluation">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="20"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>
-                
-                <Button Content="Answer Laboratory Assessment" FontSize="17" BorderThickness="0" Margin="40 0 40 10" Padding="10" Background="#F28705" Foreground="White" FontFamily="Century Gothic" Name="button_LabAssessment">
+                <Button Content="Answer Faculty Evaluation" FontSize="17" BorderThickness="0" Margin="40 0 40 10" Padding="10" Background="#F28705" Foreground="White" FontFamily="Century Gothic" Name="button_FacEvaluation" Click="buttonFaculty_Click">
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="20"/>
@@ -56,7 +48,15 @@
                     </Button.Resources>
                 </Button>
 
-                <Button Content="EXIT" BorderThickness="0" Margin="90 20 90 0" Padding="10" Background="#F2B705" Foreground="White" FontFamily="Century Gothic" Name="button_Exit" Click="button_Exit_Click">
+                <Button Content="Answer Laboratory Assessment" FontSize="17" BorderThickness="0" Margin="40 0 40 10" Padding="10" Background="#F28705" Foreground="White" FontFamily="Century Gothic" Name="button_LabAssessment" Click="buttonLab_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="20"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button Content="EXIT" BorderThickness="0" Margin="90 15 90 0" Padding="10" Background="#F2B705" Foreground="White" FontFamily="Century Gothic" Name="button_Exit" Click="buttonExit_Click">
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="20"/>
