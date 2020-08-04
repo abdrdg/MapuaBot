@@ -129,22 +129,22 @@ namespace MapuaSurveyBot
             switch (surveyName)
             {
                 case "Faculty":
-                    if (surveyLinks.Exists(x => x == "https://my.mapua.edu.ph/Student/FacultyEval.aspx"))
-                    {
+                    //if (surveyLinks.Exists(x => x == "https://my.mapua.edu.ph/Student/FacultyEval.aspx"))
+                    //{
                         return "https://my.mapua.edu.ph/Student/FacultyEval.aspx";
-                    }
+                    //}
                     break;
                 case "Laboratory":
-                    if (surveyLinks.Exists(x => x == "https://my.mapua.edu.ph/Student/LabAssessmentForLab.aspx"))
-                    {
+                    //if (surveyLinks.Exists(x => x == "https://my.mapua.edu.ph/Student/LabAssessmentForLab.aspx"))
+                    //{
                         return "https://my.mapua.edu.ph/Student/LabAssessmentForLab.aspx";
-                    }
+                    //}
                     break;
                 case "Student":
-                    if (surveyLinks.Exists(x => x == "https://my.mapua.edu.ph/Student/StudentSatisfactionSurvey.aspx"))
-                    {
+                    //if (surveyLinks.Exists(x => x == "https://my.mapua.edu.ph/Student/StudentSatisfactionSurvey.aspx"))
+                    //{
                         return "https://my.mapua.edu.ph/Student/StudentSatisfactionSurvey.aspx";
-                    }
+                    //}
                     break;
             }
             return null;
